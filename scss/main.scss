@@ -1,0 +1,55 @@
+@import './variables';
+@import './resets';
+
+body {
+    background: $primary;
+    color: $fcolor;
+}
+
+.wrp {
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    margin-top: 12%;
+}
+
+h1 , h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.6em;
+}
+
+p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#secs, #tens {
+    color: $fcolor;
+    font-size: 2.6em;
+}
+
+.start, .stop, .reset {
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: $btn-color;
+    color: $fcolor;
+    font-size: 1rem;
+    
+    cursor: pointer;
+    &:hover {
+        background-color: $hover-color;
+        color:black;
+        transition: 0.3s ease-in-out;
+    }
+    &:active {
+        background-color: #6eda7a;
+        color:black;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        transition: all 0.1s;
+    }
+}
