@@ -6,6 +6,16 @@ body {
     color: $fcolor;
 }
 
+.topclock {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    font-size: $fsize;
+}
+
 .wrp {
     width: 800px;
     margin: 30px auto;
@@ -16,7 +26,7 @@ body {
 h1 , h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 2.6em;
+    font-size: $fsize;
 }
 
 p {
@@ -26,7 +36,7 @@ p {
 
 #secs, #tens {
     color: $fcolor;
-    font-size: 2.6em;
+    font-size: $fsize;
 }
 
 .start, .stop, .reset {
